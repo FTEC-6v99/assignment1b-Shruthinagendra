@@ -7,3 +7,23 @@
 # for reference on exceptions, check the class notes here: https://github.com/FTEC-6v99/python-overview/blob/master/advanced/exceptions.py
 #
 # Make sure that you add type hints to the function paramter and return value
+
+'''
+Calculate the average of given reviews
+reviews - List of reviews
+return the rounded average of reviews
+'''
+# The average rating for restaurant review is created
+import typing as t
+from app.src.Review import Review
+
+
+def calculate_avg_rating(reviews: t.List[Review]) -> float:
+    total = 0.0
+    if(reviews == None or len(reviews) == 0):
+        return total
+    for review in reviews:
+        total += review.get_rating()
+    if(len(reviews) > 0):
+        total = total / len(reviews)
+    return round(total, 2)
