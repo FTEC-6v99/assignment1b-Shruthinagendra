@@ -24,23 +24,23 @@ class Review(object):
     def get_restaurant(self):
         return self.restaurant
 
-    def get_review_title(self):
-        return self.review_title
+   # def get_review_title(self):
+       # return self.review_title
 
-    def get_review_body(self):
-        return self.review_body
+    # def get_review_body(self):
+       # return self.review_body
 
     def get_rating(self):
         return self.rating
 
-    def set_restaurant(self, value):
-        self.restaurant = value
+  #  def set_restaurant(self, value):
+       # self.restaurant = value
 
-    def set_review_title(self, value):
-        self.review_title = value
+   # def set_review_title(self, value):
+       # self.review_title = value
 
-    def set_review_body(self, value):
-        self.review_body = value
+   # def set_review_body(self, value):
+       # self.review_body = value
 
-    def set_rating(self, value):
-        self.rating = value
+    # def set_rating(self, value):
+        #self.rating = value
